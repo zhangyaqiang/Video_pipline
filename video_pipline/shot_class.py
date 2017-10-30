@@ -17,7 +17,8 @@ class Shot(object):
     def __init__(self, shot_path=None):
         if shot_path == None:
             raise AttributeError('No shot path!')
-        self.shot_path = shot_path
+        self.shot_dir = shot_path
+        self.shot_path = glob.glob(os.path.join(shot_path, '*mp4'))[0]
         self.shot_name = os.path.splitext(os.path.basename(self.shot_path))[0]
         self.frames_dir = os.path.join(os.path.dirname(os.path.abspath(self.shot_path)), self.shot_name)
         self.detector = dlib.get_frontal_face_detector()
@@ -105,7 +106,7 @@ class Shot(object):
         return True
 
     def delete(self):
-        command = 'rm ' + self.shot_path
+        command = 'rm -rf ' + self.shot_path
         subprocess.call(command, shell=True)
 
     def to_frames_wav(self):
@@ -119,18 +120,7 @@ class Shot(object):
             image_path = os.path.join(self.frames_dir, "frame_" + str(num).zfill(4) + ".png")
             io.imsave(image_path, frame)
             num += 1
-        wav_path = os.path.join(self.frames_dir, self.shot_name + ".wav")
-        ps = subprocess.Popen(("ffmpeg",
-                               "-i",
-                               self.shot_path,
-                               "-ac",
-                               "1",
-                               "-ar",
-                               "16000",
-                               wav_path),
-                              stdout=subprocess.PIPE,
-                              stderr=subprocess.STDOUT)
-        output = ps.stdout.read()
+
 
 
 
@@ -174,7 +164,7 @@ class Shot(object):
         mat_y = np.empty([120, 120, frame_nums], dtype=np.uint8)
         for i in range(frame_nums):
             mat_y[:, :, i] = io.imread(frame_list[i])
-        wav_file = glob.glob(os.path.join(self.frames_dir, "*.wav"))
+        wav_file = glob.glob(os.path.join(self.shot_dir, "*.wav"))
         f, mat_z = wavfile.read(wav_file[0])
         mat_z = mat_z / (2. ** 15)
         self.mat_data = os.path.join(self.frames_dir, os.path.splitext(os.path.basename(wav_file[0]))[0] + ".mat")
@@ -188,3 +178,6 @@ class Shot(object):
             av_sync =  True
         eng.close()
         return av_sync
+
+    def asr(self):
+        a = 1
