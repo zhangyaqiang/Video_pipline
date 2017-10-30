@@ -133,9 +133,6 @@ class Video(object):
                 start_frame = int(self.boundaries[bound_num] / 0.04)
                 end_frame = int(self.boundaries[bound_num + 1] / 0.04)-1
                 self.split_wav(self.boundaries[bound_num], self.boundaries[bound_num + 1] - 0.04, wav_path)
-
-
-
             frame_num += 1
 
 

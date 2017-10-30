@@ -36,6 +36,7 @@ def main():
         #determine if the shot av_sync
         for shot in shot_list:
             _shot = Shot(shot)
+            _shot.get_frames_mouth()
             _shot.to_frames_wav()
             _shot.to_matdata()
             if not _shot.av_sync():

@@ -106,8 +106,13 @@ class Shot(object):
         return True
 
     def delete(self):
-        command = 'rm -rf ' + self.shot_path
-        subprocess.call(command, shell=True)
+        ps = subprocess.Popen(("rm",
+                               "-rf",
+                               self.shot_dir),
+                              stdout=subprocess.PIPE,
+                              stderr=subprocess.STDOUT)
+        output = ps.stdout.read()
+        print output
 
     def to_frames_wav(self):
         if not os.path.exists(self.frames_dir):
@@ -174,7 +179,7 @@ class Shot(object):
         eng = matlab.engine.start_matlab()
         offset, conf = eng.findoffset(self.mat_data, nargout=2)
         av_sync = False
-        if (offset > 0 & offset < 5 & conf > 5):
+        if (offset > 0 and offset < 5 and conf > 5):
             av_sync =  True
         eng.close()
         return av_sync
