@@ -15,6 +15,7 @@ class Video(object):
 
     def to_wav(self):
         ps = subprocess.Popen(("ffmpeg",
+                               "-y",
                                "-i",
                                self.video_path,
                                "-ac",
@@ -101,12 +102,13 @@ class Video(object):
             bound_num += 1
         start_frame = int(self.boundaries[bound_num]/0.04)
         end_frame = int(self.boundaries[bound_num+1]/0.04)-1
-        self.split_wav(self.boundaries[bound_num], self.boundaries[bound_num+1]-0.04, wav_path)
+        self.split_wav(self.boundaries[bound_num], self.boundaries[bound_num+1]-0.08, wav_path)
         while cap.isOpened():
             ret, frame = cap.read()
             if not ret:
                 print ("no image")
                 break;
+            frame = cv2.resize(frame, (720, 576), interpolation=cv2.INTER_CUBIC)
             if frame_num < start_frame:
                 frame_num += 1
                 continue
@@ -123,7 +125,7 @@ class Video(object):
 
                 shot_num += 1
                 shot_dir = os.path.join(self.shots_dir, "shot_" + str(shot_num).zfill(4))
-                if not os._exists(shot_dir):
+                if not os.path.exists(shot_dir):
                     os.mkdir(shot_dir)
                 shot_path = os.path.join(shot_dir, "shot_" + str(shot_num).zfill(4) + ".mp4")
                 avi_path = os.path.join(shot_dir, "shot_" + str(shot_num).zfill(4) + ".avi")
@@ -139,6 +141,7 @@ class Video(object):
 
     def split_wav(self, start_time, end_time, wav_path):
         ps = subprocess.Popen(("ffmpeg",
+                               "-y",
                                "-i",
                                self.wav_path,
                                "-ss",
@@ -151,6 +154,7 @@ class Video(object):
 
     def merge_avi_wav(self, avi_path, wav_path, shot_path):
         ps = subprocess.Popen(("ffmpeg",
+                               "-y",
                                "-i",
                                wav_path,
                                "-i",

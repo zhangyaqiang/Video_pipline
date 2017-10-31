@@ -24,7 +24,7 @@ class Shot(object):
         self.detector = dlib.get_frontal_face_detector()
         self.predictor = dlib.shape_predictor('/home/zyq/PycharmProjects/'
                                               'Video_pipline/bin/shape_predictor_68_face_landmarks.dat')
-        self.mat_data = None
+        self.wav_path = glob.glob(os.path.join(self.shot_dir, "*.wav"))[0]
         self.frames = None
         self.mouth_frames = None
 
@@ -129,9 +129,9 @@ class Shot(object):
 
 
 
-    def get_video_frames(self, path):
+    def get_video_frames(self):
         # 原来使用skvideo读取视频文件
-        videogen = skvideo.io.vreader(path)
+        videogen = skvideo.io.vreader(self.shot_path)
         self.frames = np.array([frame for frame in videogen])
 
 
@@ -163,21 +163,20 @@ class Shot(object):
             mouth_frames.append(mouth_crop_image)
         self.mouth_frames =  mouth_frames
 
-    def to_matdata(self):
-        frame_list = os.path.join(self.frames_dir, '*.png')
-        frame_nums = len(frame_list)
-        mat_y = np.empty([120, 120, frame_nums], dtype=np.uint8)
-        for i in range(frame_nums):
-            mat_y[:, :, i] = io.imread(frame_list[i])
-        wav_file = glob.glob(os.path.join(self.shot_dir, "*.wav"))
-        f, mat_z = wavfile.read(wav_file[0])
-        mat_z = mat_z / (2. ** 15)
-        self.mat_data = os.path.join(self.frames_dir, os.path.splitext(os.path.basename(wav_file[0]))[0] + ".mat")
-        scio.savemat(self.mat_data, {'Y': mat_y, 'Z': mat_z})
+    #def to_matdata(self):
+     #  frame_nums = len(frame_list)
+     #   mat_y = np.empty([120, 120, frame_nums], dtype=np.uint8)
+     #   for i in range(frame_nums):
+     #       mat_y[:, :, i] = io.imread(frame_list[i])
+     #   wav_file = glob.glob(os.path.join(self.shot_dir, "*.wav"))
+     #   f, mat_z = wavfile.read(wav_file[0])
+     #   mat_z = mat_z / (2. ** 15)
+     #   self.mat_data = os.path.join(self.shot_dir, os.path.splitext(os.path.basename(wav_file[0]))[0] + ".mat")
+     #   scio.savemat(self.mat_data, {'Y': mat_y, 'Z': mat_z})
 
     def av_sync(self):
         eng = matlab.engine.start_matlab()
-        offset, conf = eng.findoffset(self.mat_data, nargout=2)
+        offset, conf = eng.findoffset(self.frames_dir+"/", self.wav_path, nargout=2)
         av_sync = False
         if (offset > 0 and offset < 5 and conf > 5):
             av_sync =  True

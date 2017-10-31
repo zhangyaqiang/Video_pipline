@@ -1,4 +1,4 @@
-function [av_offset, confidence]=findoffset(mat_data)
+function [av_offset, confidence]=findoffset(frames_dir, wav_file)
 run /home/zyq/matconvnet-1.0-beta25/matlab/vl_setupnn.m	% Path to MatConvNet Vers 23
 addpath /home/zyq/PycharmProjects/Video_pipline/bin/tools
 %% Fixed parameters
@@ -31,18 +31,24 @@ lip_id = structfind(net.vars,'name','x24_lip');
 
 %% Load and prepare data
 
-data 			= load(mat_data);
+frame_list = dir([frames_dir, '*.png']);
+frame_nums = length(frame_list);
+Y = zeros(120,120,frame_nums, 'uint8');
+for i=1:frame_nums;
+    image_name = strcat(frames_dir, frame_list(i).name);
+    img = imread(image_name);
+    Y(:, :, i) = img;
+end;
 
-Y 				= data.Y;
 Y 				= bsxfun(@minus, single(Y), net.meta.normalization_l.averageImage) ;
 Y 				= Y(5:115,5:115,:);
 
-Z 				= data.Z;
+[Z,fs] = audioread(wav_file);
 [ C, ~, ~ ] 	= runmfcc( Z, opt );
 C 				= C(2:13,:);
 C 				= bsxfun(@minus, single(C), net.meta.normalization_a.averageImage) ;
 
-    
+
 %% Network forward pass to get features
 
 for j = 1: size(Y,3) - Yframes + 1
