@@ -3,6 +3,7 @@ import os
 import glob
 from video_class import Video
 from shot_class import Shot
+from Asr import Asr
 
 def main():
     src_video_dir = '/home/zyq/video_pipline_data/test_video'

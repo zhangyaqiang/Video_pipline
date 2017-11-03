@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="598e923e-f8c6-43d8-aa6c-d152e2873380" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Video_pipline.iml" afterPath="$PROJECT_DIR$/.idea/Video_pipline.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video_pipline/findoffset.m" afterPath="$PROJECT_DIR$/video_pipline/findoffset.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video_pipline/main.py" afterPath="$PROJECT_DIR$/video_pipline/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video_pipline/shot_class.py" afterPath="$PROJECT_DIR$/video_pipline/shot_class.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video_pipline/video_class.py" afterPath="$PROJECT_DIR$/video_pipline/video_class.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,11 +43,9 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/video_pipline/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="e#17#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-102">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,7 +53,7 @@
       <file leaf-file-name="video_class.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/video_pipline/video_class.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
+            <state relative-caret-position="144">
               <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
               <folding>
                 <element signature="e#14#45#0" expanded="true" />
@@ -71,8 +65,8 @@
       <file leaf-file-name="shot_class.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/video_pipline/shot_class.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+            <state relative-caret-position="2148">
+              <caret line="172" column="39" lean-forward="true" selection-start-line="172" selection-start-column="39" selection-end-line="172" selection-end-column="39" />
               <folding>
                 <element signature="e#14#25#0" expanded="true" />
               </folding>
@@ -115,8 +109,8 @@
         <option value="$PROJECT_DIR$/video_pipline/tests/test.py" />
         <option value="$PROJECT_DIR$/video_pipline/findoffset.m" />
         <option value="$PROJECT_DIR$/video_pipline/main.py" />
-        <option value="$PROJECT_DIR$/video_pipline/shot_class.py" />
         <option value="$PROJECT_DIR$/video_pipline/video_class.py" />
+        <option value="$PROJECT_DIR$/video_pipline/shot_class.py" />
       </list>
     </option>
   </component>
@@ -177,11 +171,6 @@
             <path>
               <item name="Video_pipline" type="b2602c69:ProjectViewProjectNode" />
               <item name="Video_pipline" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Video_pipline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Video_pipline" type="462c0819:PsiDirectoryNode" />
-              <item name="video_pipline" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -459,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509452852290</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="改成了python3版本">
+      <created>1509696327167</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1509696327167</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -527,7 +523,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初版" />
-    <option name="LAST_COMMIT_MESSAGE" value="初版" />
+    <MESSAGE value="改成了python3版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="改成了python3版本" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -590,9 +587,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding>
-            <element signature="e#17#26#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -637,9 +632,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding>
-            <element signature="e#17#26#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -684,9 +677,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="30" />
-          <folding>
-            <element signature="e#17#26#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -731,9 +722,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="e#17#26#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -777,9 +766,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="e#17#26#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -823,9 +810,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding>
-            <element signature="e#17#26#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -933,16 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/video_pipline/video_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
-          <folding>
-            <element signature="e#14#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python3.5/dist-packages/skimage/util/dtype.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
@@ -961,18 +936,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/video_pipline/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="-102">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video_pipline/video_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
           <folding>
-            <element signature="e#17#26#0" expanded="true" />
+            <element signature="e#14#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/video_pipline/shot_class.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+        <state relative-caret-position="2148">
+          <caret line="172" column="39" lean-forward="true" selection-start-line="172" selection-start-column="39" selection-end-line="172" selection-end-column="39" />
           <folding>
             <element signature="e#14#25#0" expanded="true" />
           </folding>

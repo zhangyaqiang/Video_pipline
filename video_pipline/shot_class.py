@@ -9,7 +9,7 @@ from skimage import io,color,transform,img_as_ubyte
 import os
 import glob
 import matlab.engine
-
+from Asr import Asr
 
 class Shot(object):
     def __init__(self, shot_path=None):
@@ -25,6 +25,7 @@ class Shot(object):
         self.wav_path = glob.glob(os.path.join(self.shot_dir, "*.wav"))[0]
         self.frames = None
         self.mouth_frames = None
+        self.audio = None
 
     def overlap_proportion(self, c1, r1, w1, h1, c2, r2, w2, h2):
         if c1 > c2 + w2: return 0.0
@@ -183,4 +184,10 @@ class Shot(object):
         return av_sync
 
     def asr(self):
-        a = 1
+        a = Asr(self.wav_path)
+        a.get_text()
+        a.get_lab()
+        a.get_pinyin()
+        a.get_phoneme()
+        a.alignment()
+
