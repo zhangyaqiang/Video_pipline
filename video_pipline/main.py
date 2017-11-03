@@ -37,13 +37,11 @@ def main():
         for shot in shot_list:
             _shot = Shot(shot)
             _shot.get_video_frames()
-            print _shot.shot_name+"has got video_frames"
+            print (_shot.shot_name+"has got video_frames")
             _shot.get_frames_mouth()
-            print _shot.shot_name+"has got mouth frames"
+            print (_shot.shot_name+"has got mouth frames")
             _shot.to_frames_wav()
-            print _shot.shot_name+"has got shot name"
-            #_shot.to_matdata()
-            #print "     "+_shot.shot_path+"shot has been converted to matdata"
+            print (_shot.shot_name+"has got shot name")
             if not _shot.av_sync():
                 _shot.delete()
                 print ("    audio video not sync", shot, "deleted")

@@ -8,8 +8,6 @@ import numpy as np
 from skimage import io,color,transform,img_as_ubyte
 import os
 import glob
-from scipy.io import  wavfile
-import scipy.io as scio
 import matlab.engine
 
 
@@ -78,7 +76,7 @@ class Shot(object):
                         ok = tracker.add(cv2.TrackerKCF_create(), image, bbox)
 
                     if not ok:
-                        print "tracker initial error"
+                        print ("tracker initial error")
                         break
                     init_once = True
                     start_frame = cur_frame
@@ -112,7 +110,7 @@ class Shot(object):
                               stdout=subprocess.PIPE,
                               stderr=subprocess.STDOUT)
         output = ps.stdout.read()
-        print output
+        print (output)
 
     def to_frames_wav(self):
         if not os.path.exists(self.frames_dir):
@@ -181,6 +179,7 @@ class Shot(object):
         if (offset > 0 and offset < 5 and conf > 5):
             av_sync =  True
         eng.close()
+        print (offset, conf)
         return av_sync
 
     def asr(self):

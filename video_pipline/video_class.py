@@ -71,7 +71,7 @@ class Video(object):
             their associated scores
         """
         boundaries = []
-        for line in output.split('\n')[13:-2]:
+        for line in output.decode().split('\n')[13:-2]:
             boundary = float(line.split('|')[4].split('=')[-1])
             score = float(line.split('|')[-1].split('=')[-1])
             boundaries.append((boundary))
@@ -102,7 +102,7 @@ class Video(object):
             bound_num += 1
         start_frame = int(self.boundaries[bound_num]/0.04)
         end_frame = int(self.boundaries[bound_num+1]/0.04)-1
-        self.split_wav(self.boundaries[bound_num], self.boundaries[bound_num+1]-0.08, wav_path)
+        self.split_wav(self.boundaries[bound_num], self.boundaries[bound_num+1]-0.04, wav_path)
         while cap.isOpened():
             ret, frame = cap.read()
             if not ret:
