@@ -10,6 +10,7 @@ import os
 import glob
 import matlab.engine
 from Asr import Asr
+from label_class import Label
 
 class Shot(object):
     def __init__(self, shot_path=None):
@@ -24,6 +25,7 @@ class Shot(object):
                                               'Video_pipline/bin/shape_predictor_68_face_landmarks.dat')
         self.wav_path = glob.glob(os.path.join(self.shot_dir, "*.wav"))[0]
         self.frames = None
+        self.label_path = os.path.join(self.shot_dir, 'label.txt')
         self.mouth_frames = None
         self.audio = None
 
@@ -154,11 +156,10 @@ class Shot(object):
                 if i < 48:
                     continue
                 mouth_points.append((part.x, part.y))
-            width = (right - left) / 2
+            width = (right - left) // 2
             np_mouth_points = np.array(mouth_points)
             mouth_centroid = np.mean(np_mouth_points[:, -2:], axis=0).astype(int)
-            mouth_crop_image = frame[mouth_centroid[1] - width:mouth_centroid[1] + width,
-                               mouth_centroid[0] - width:mouth_centroid[0] + width]
+            mouth_crop_image = frame[mouth_centroid[1] - width:mouth_centroid[1] + width, mouth_centroid[0] - width:mouth_centroid[0] + width]
             mouth_frames.append(mouth_crop_image)
         self.mouth_frames =  mouth_frames
 
@@ -185,9 +186,15 @@ class Shot(object):
 
     def asr(self):
         a = Asr(self.wav_path)
-        a.get_text()
+        if not a.get_text():
+            self.delete()
+            return
         a.get_lab()
         a.get_pinyin()
         a.get_phoneme()
         a.alignment()
 
+    def get_labels(self):
+        label = Label(self.label_path)
+        label.split_label()
+        label.split_video()
