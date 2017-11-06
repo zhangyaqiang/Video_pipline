@@ -119,7 +119,7 @@ class Video(object):
                 self.merge_avi_wav(avi_path, wav_path, shot_path)
                 #下一个镜头边界
                 bound_num += 1
-                while bound_num < bound_len-1 and self.boundaries[bound_num + 1] - self.boundaries[bound_num] < 3:
+                while bound_num < bound_len-1 and (self.boundaries[bound_num + 1] - self.boundaries[bound_num] < 3 or self.boundaries[bound_num + 1] - self.boundaries[bound_num] > 60):
                     bound_num += 1
                 if bound_num == bound_len-1: return
 

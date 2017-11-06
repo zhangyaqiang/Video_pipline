@@ -56,7 +56,6 @@ class Shot(object):
 
             ok, image = cap.read()
             if not ok:
-                print ("no image")
                 break
 
             frame = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
@@ -72,8 +71,8 @@ class Shot(object):
                         face_pos = []
                         face_pos.append((x, y, w, h))
                         track_windows.append((x, y, w, h))
-                        print("Detection {}: Left: {} Top: {} Right: {} Bottom: {}".format(
-                            i, d.left(), d.top(), d.right(), d.bottom()))
+                        #print("Detection {}: Left: {} Top: {} Right: {} Bottom: {}".format(
+                            #i, d.left(), d.top(), d.right(), d.bottom()))
 
                     for bbox in track_windows:
                         ok = tracker.add(cv2.TrackerKCF_create(), image, bbox)
@@ -113,7 +112,7 @@ class Shot(object):
                               stdout=subprocess.PIPE,
                               stderr=subprocess.STDOUT)
         output = ps.stdout.read()
-        print (output)
+        # print (output)
 
     def to_frames_wav(self):
         if not os.path.exists(self.frames_dir):
@@ -181,20 +180,22 @@ class Shot(object):
         if (offset > 0 and offset < 5 and conf > 5):
             av_sync =  True
         eng.close()
-        print (offset, conf)
         return av_sync
 
     def asr(self):
         a = Asr(self.wav_path)
         if not a.get_text():
             self.delete()
-            return
+            return False
         a.get_lab()
         a.get_pinyin()
         a.get_phoneme()
         a.alignment()
+        return True
 
     def get_labels(self):
         label = Label(self.label_path)
         label.split_label()
+        print("label has been splited")
         label.split_video()
+        print("video has been splited")
