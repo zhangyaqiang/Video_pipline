@@ -1,7 +1,7 @@
 function [av_offset, confidence]=findoffset(frames_dir, wav_file)
 run /home/zyq/matconvnet-1.0-beta25/matlab/vl_setupnn.m	% Path to MatConvNet Vers 23
 addpath /home/zyq/PycharmProjects/Video_pipline/bin/tools
-gpuDevice(1);
+gpuDevice(1)
 %% Fixed parameters
 
 

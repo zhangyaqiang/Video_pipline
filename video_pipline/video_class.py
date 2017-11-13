@@ -3,6 +3,7 @@ from __future__ import division
 import subprocess
 import os
 import cv2
+import math
 
 class Video(object):
     def __init__(self, video_path=None, shots_dir=None):
@@ -53,6 +54,7 @@ class Video(object):
                                     stdout=subprocess.PIPE,
                                     stderr=subprocess.STDOUT)
         output = scene_ps.stdout.read()
+        print(output)
         self.boundaries = self.extract_boundaries_from_ffprobe_output(output)
         self.boundaries.insert(0,0)
 
@@ -89,7 +91,7 @@ class Video(object):
         #切割视频
         fourcc = cv2.VideoWriter_fourcc(*'XVID')
         shot_dir = os.path.join(self.shots_dir, "shot_" + str(shot_num).zfill(4))
-        if not os._exists(shot_dir):
+        if not os.path.exists(shot_dir):
             os.mkdir(shot_dir)
         shot_path = os.path.join(shot_dir, "shot_" + str(shot_num).zfill(4) + ".mp4")
         avi_path = os.path.join(shot_dir, "shot_" + str(shot_num).zfill(4) + ".avi")
@@ -100,8 +102,8 @@ class Video(object):
 
         while(self.boundaries[bound_num+1] - self.boundaries[bound_num] < 3):
             bound_num += 1
-        start_frame = int(self.boundaries[bound_num]/0.04)
-        end_frame = int(self.boundaries[bound_num+1]/0.04)-1
+        start_frame = int(math.ceil(self.boundaries[bound_num]/0.04))
+        end_frame = int(math.ceil(self.boundaries[bound_num+1]/0.04))-1
         self.split_wav(self.boundaries[bound_num], self.boundaries[bound_num+1]-0.04, wav_path)
         while cap.isOpened():
             ret, frame = cap.read()
@@ -119,7 +121,7 @@ class Video(object):
                 self.merge_avi_wav(avi_path, wav_path, shot_path)
                 #下一个镜头边界
                 bound_num += 1
-                while bound_num < bound_len-1 and (self.boundaries[bound_num + 1] - self.boundaries[bound_num] < 3 or self.boundaries[bound_num + 1] - self.boundaries[bound_num] > 60):
+                while bound_num < bound_len-1 and self.boundaries[bound_num + 1] - self.boundaries[bound_num] < 3:
                     bound_num += 1
                 if bound_num == bound_len-1: return
 
@@ -132,8 +134,8 @@ class Video(object):
                 wav_path = os.path.join(shot_dir, "shot_" + str(shot_num).zfill(4) + ".wav")
                 out = cv2.VideoWriter(avi_path, fourcc, 25, (720, 576))
 
-                start_frame = int(self.boundaries[bound_num] / 0.04)
-                end_frame = int(self.boundaries[bound_num + 1] / 0.04)-1
+                start_frame = int(math.ceil(self.boundaries[bound_num] / 0.04))
+                end_frame = int(math.ceil(self.boundaries[bound_num + 1] / 0.04))-1
                 self.split_wav(self.boundaries[bound_num], self.boundaries[bound_num + 1] - 0.04, wav_path)
             frame_num += 1
 

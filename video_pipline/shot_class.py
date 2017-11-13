@@ -9,8 +9,8 @@ from skimage import io,color,transform,img_as_ubyte
 import os
 import glob
 import matlab.engine
-from Asr import Asr
-from label_class import Label
+from video_pipline.Asr import Asr
+from video_pipline.label_class import Label
 
 class Shot(object):
     def __init__(self, shot_path=None):
@@ -177,7 +177,7 @@ class Shot(object):
         eng = matlab.engine.start_matlab()
         offset, conf = eng.findoffset(self.frames_dir+"/", self.wav_path, nargout=2)
         av_sync = False
-        if (offset > 0 and offset < 5 and conf > 5):
+        if (offset >= -1 and offset < 5 and conf > 5):
             av_sync =  True
         eng.close()
         return av_sync
@@ -190,7 +190,9 @@ class Shot(object):
         a.get_lab()
         a.get_pinyin()
         a.get_phoneme()
-        a.alignment()
+        if not a.alignment():
+            self.delete()
+            return False
         return True
 
     def get_labels(self):
