@@ -1,13 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="598e923e-f8c6-43d8-aa6c-d152e2873380" name="Default" comment="">
+    <list default="true" id="598e923e-f8c6-43d8-aa6c-d152e2873380" name="Default" comment="把视频切成以句子为单位的数据集">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/bin/mandarin.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/bin/mfa_align" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/bin/mfa_generate_dictionary" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/bin/mfa_train_and_align" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/bin/mfa_train_g2p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_bisect.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_bz2.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_codecs_cn.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_codecs_hk.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_codecs_iso2022.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_codecs_jp.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_codecs_kr.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_codecs_tw.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_ctypes.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_datetime.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_decimal.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_hashlib.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_heapq.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_lzma.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_md5.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_multibytecodec.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_multiprocessing.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_opcode.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_pickle.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_posixsubprocess.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_random.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_sha1.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_sha256.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_sha512.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_socket.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_ssl.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_struct.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/align" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/array.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/audioop.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/base_library.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/binascii.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/fcntl.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/generate_dictionary" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/grp.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/libcrypto.so.1.0.0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/liblzma.so.5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/libncursesw.so.5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/libpython3.5m.so.1.0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/libreadline.so.6" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/libssl.so.1.0.0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/libtinfo.so.5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/libz.so.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/math.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/mmap.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/pyexpat.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/readline.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/resource.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/select.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/termios.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/acc-tree-stats" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/add-deltas" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/ali-to-post" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/align-equal-compiled" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/apply-cmvn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/build-tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/cluster-phones" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/compile-questions" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/compile-train-graphs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/compile-train-graphs-fsts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/compose-transforms" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/compute-cmvn-stats" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/compute-mfcc-feats" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/convert-ali" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/copy-feats" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/draw-tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/extract-segments" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/farcompilestrings" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/feat-to-dim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/fstarcsort" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/fstcompile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/fstcopy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/fstdraw" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-acc-stats-ali" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-align-compiled" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-boost-silence" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-est" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-est-fmllr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-init-model" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-init-mono" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-latgen-faster" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-mixup" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-sum-accs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/lattice-align-words" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/lattice-to-phone-lattice" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libfst.so.7" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libfstfar.so.7" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libfstfarscript.so.7" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libfstscript.so.7" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-base.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-decoder.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-feat.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-fstext.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-gmm.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-hmm.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-lat.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-matrix.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-thread.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-transform.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-tree.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-util.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libngram.so.2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/linear-to-nbest" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/nbest-to-ctm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/ngramcount" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/ngrammake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/ngramprint" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/ngramsymbols" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/phonetisaurus-align" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/phonetisaurus-arpa2wfst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/phonetisaurus-g2pfst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/show-transitions" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/subset-feats" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/sum-tree-stats" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/transform-feats" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/weight-silence-post" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/train_and_align" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/train_g2p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/unicodedata.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/zlib.cpython-35m-x86_64-linux-gnu.so" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/pretrained_models/english.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/pretrained_models/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/pretrained_models/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/phonetic.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video_pipline/.ipynb_checkpoints/Untitled-checkpoint.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video_pipline/Asr.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video_pipline/Untitled.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video_pipline/label_class.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video_pipline/tests/findoffset.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video_pipline/findoffset.m" afterPath="$PROJECT_DIR$/video_pipline/findoffset.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video_pipline/main.py" afterPath="$PROJECT_DIR$/video_pipline/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video_pipline/shot_class.py" afterPath="$PROJECT_DIR$/video_pipline/shot_class.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video_pipline/tests/test.py" afterPath="$PROJECT_DIR$/video_pipline/tests/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video_pipline/video_class.py" afterPath="$PROJECT_DIR$/video_pipline/video_class.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,8 +177,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/video_pipline/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="60" column="37" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
               <folding>
                 <element signature="e#17#26#0" expanded="true" />
               </folding>
@@ -61,19 +192,7 @@
             <state relative-caret-position="72">
               <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
               <folding>
-                <marker date="1510230621000" expanded="true" signature="1093:2276" ph="..." />
-                <marker date="1510230621000" expanded="true" signature="2339:3039" ph="..." />
-                <marker date="1510230621000" expanded="true" signature="2348:2765" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-                <marker date="1510230621000" expanded="true" signature="2845:3013" ph="..." />
-                <marker date="1510230621000" expanded="true" signature="3067:5806" ph="..." />
-                <marker date="1510230621000" expanded="true" signature="4182:5806" ph="..." />
-                <marker date="1510230621000" expanded="true" signature="4242:4300" ph="..." />
-                <marker date="1510230621000" expanded="true" signature="4421:4477" ph="..." />
-                <marker date="1510230621000" expanded="true" signature="4591:5779" ph="..." />
-                <marker date="1510230621000" expanded="true" signature="5668:5779" ph="..." />
-                <marker date="1510230621000" expanded="true" signature="5866:6349" ph="..." />
-                <marker date="1510230621000" expanded="true" signature="5898:6237" ph="..." />
-                <marker date="1510230621000" expanded="true" signature="6442:6766" ph="..." />
+                <marker date="1510966445000" expanded="true" signature="5668:5779" ph="..." />
               </folding>
             </state>
           </provider>
@@ -96,59 +215,9 @@
       <file leaf-file-name="Asr.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/video_pipline/Asr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5580">
+            <state relative-caret-position="6120">
               <caret line="348" column="19" lean-forward="false" selection-start-line="348" selection-start-column="19" selection-end-line="348" selection-end-column="19" />
-              <folding>
-                <marker date="1510141181000" expanded="true" signature="218:1987" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="1398:1987" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="9048:9099" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="9133:9970" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="9207:9951" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="9992:10322" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="10013:10305" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="10065:10117" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="10135:10305" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="10193:10305" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="10233:10305" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="10345:10549" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="10358:10499" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="10436:10499" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="10572:10666" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="10596:10649" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="10689:10848" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="10702:10755" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="10880:11589" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="11014:11479" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="11079:11479" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="11152:11479" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="11233:11479" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="11323:11479" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="11621:13020" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="11673:13001" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="11831:12387" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="11931:12387" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="12564:12721" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="12749:12906" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="13050:14393" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="13135:14374" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="13291:13831" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="13389:13831" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="14008:14165" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="14193:14350" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="14423:14714" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="14551:14669" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="14743:14960" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="14791:14916" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="15016:15983" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="15361:15688" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="15374:15409" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="15778:15983" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="15862:15983" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="16340:16464" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="16746:17304" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="16785:17028" ph="..." />
-                <marker date="1510141181000" expanded="true" signature="17054:17304" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,19 +225,10 @@
       <file leaf-file-name="label_class.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/video_pipline/label_class.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
+            <state relative-caret-position="1422">
               <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1510125608000" expanded="true" signature="584:3446" ph="..." />
-                <marker date="1510125608000" expanded="true" signature="769:3428" ph="..." />
-                <marker date="1510125608000" expanded="true" signature="3475:5426" ph="..." />
-                <marker date="1510125608000" expanded="true" signature="4264:5426" ph="..." />
-                <marker date="1510125608000" expanded="true" signature="4324:4377" ph="..." />
-                <marker date="1510125608000" expanded="true" signature="4417:4473" ph="..." />
-                <marker date="1510125608000" expanded="true" signature="4587:5399" ph="..." />
-                <marker date="1510125608000" expanded="true" signature="5484:5967" ph="..." />
-                <marker date="1510125608000" expanded="true" signature="5516:5855" ph="..." />
               </folding>
             </state>
           </provider>
@@ -265,7 +325,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,12 +335,18 @@
             <path>
               <item name="Video_pipline" type="b2602c69:ProjectViewProjectNode" />
               <item name="Video_pipline" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Video_pipline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Video_pipline" type="462c0819:PsiDirectoryNode" />
               <item name="video_pipline" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -589,7 +654,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509936717718</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="把视频切成以句子为单位的数据集">
+      <created>1510538892475</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1510538892476</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -604,9 +676,9 @@
   <component name="ToolWindowManager">
     <frame x="98" y="24" width="981" height="780" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31056562" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31696904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -723,19 +795,7 @@
         <state relative-caret-position="2052">
           <caret line="117" column="30" lean-forward="false" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="30" />
           <folding>
-            <marker date="1510230621000" expanded="true" signature="1093:2276" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="2339:3039" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="2348:2765" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1510230621000" expanded="true" signature="2845:3013" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="3067:5806" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4182:5806" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4242:4300" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4421:4477" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4591:5779" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5668:5779" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5866:6349" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5898:6237" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="6442:6766" ph="..." />
+            <marker date="1510966445000" expanded="true" signature="5668:5779" ph="..." />
           </folding>
         </state>
       </provider>
@@ -784,19 +844,7 @@
         <state relative-caret-position="2448">
           <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
           <folding>
-            <marker date="1510230621000" expanded="true" signature="1093:2276" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="2339:3039" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="2348:2765" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1510230621000" expanded="true" signature="2845:3013" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="3067:5806" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4182:5806" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4242:4300" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4421:4477" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4591:5779" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5668:5779" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5866:6349" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5898:6237" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="6442:6766" ph="..." />
+            <marker date="1510966445000" expanded="true" signature="5668:5779" ph="..." />
           </folding>
         </state>
       </provider>
@@ -845,19 +893,7 @@
         <state relative-caret-position="2448">
           <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
           <folding>
-            <marker date="1510230621000" expanded="true" signature="1093:2276" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="2339:3039" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="2348:2765" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1510230621000" expanded="true" signature="2845:3013" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="3067:5806" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4182:5806" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4242:4300" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4421:4477" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4591:5779" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5668:5779" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5866:6349" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5898:6237" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="6442:6766" ph="..." />
+            <marker date="1510966445000" expanded="true" signature="5668:5779" ph="..." />
           </folding>
         </state>
       </provider>
@@ -906,19 +942,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding>
-            <marker date="1510230621000" expanded="true" signature="1093:2276" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="2339:3039" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="2348:2765" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1510230621000" expanded="true" signature="2845:3013" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="3067:5806" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4182:5806" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4242:4300" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4421:4477" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4591:5779" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5668:5779" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5866:6349" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5898:6237" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="6442:6766" ph="..." />
+            <marker date="1510966445000" expanded="true" signature="5668:5779" ph="..." />
           </folding>
         </state>
       </provider>
@@ -966,19 +990,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding>
-            <marker date="1510230621000" expanded="true" signature="1093:2276" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="2339:3039" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="2348:2765" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1510230621000" expanded="true" signature="2845:3013" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="3067:5806" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4182:5806" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4242:4300" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4421:4477" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4591:5779" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5668:5779" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5866:6349" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5898:6237" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="6442:6766" ph="..." />
+            <marker date="1510966445000" expanded="true" signature="5668:5779" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1026,19 +1038,7 @@
         <state relative-caret-position="270">
           <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding>
-            <marker date="1510230621000" expanded="true" signature="1093:2276" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="2339:3039" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="2348:2765" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1510230621000" expanded="true" signature="2845:3013" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="3067:5806" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4182:5806" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4242:4300" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4421:4477" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4591:5779" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5668:5779" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5866:6349" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5898:6237" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="6442:6766" ph="..." />
+            <marker date="1510966445000" expanded="true" signature="5668:5779" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1159,77 +1159,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/video_pipline/Asr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5580">
+        <state relative-caret-position="6120">
           <caret line="348" column="19" lean-forward="false" selection-start-line="348" selection-start-column="19" selection-end-line="348" selection-end-column="19" />
-          <folding>
-            <marker date="1510141181000" expanded="true" signature="218:1987" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="1398:1987" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="9048:9099" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="9133:9970" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="9207:9951" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="9992:10322" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="10013:10305" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="10065:10117" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="10135:10305" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="10193:10305" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="10233:10305" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="10345:10549" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="10358:10499" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="10436:10499" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="10572:10666" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="10596:10649" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="10689:10848" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="10702:10755" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="10880:11589" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="11014:11479" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="11079:11479" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="11152:11479" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="11233:11479" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="11323:11479" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="11621:13020" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="11673:13001" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="11831:12387" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="11931:12387" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="12564:12721" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="12749:12906" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="13050:14393" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="13135:14374" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="13291:13831" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="13389:13831" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="14008:14165" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="14193:14350" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="14423:14714" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="14551:14669" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="14743:14960" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="14791:14916" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="15016:15983" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="15361:15688" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="15374:15409" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="15778:15983" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="15862:15983" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="16340:16464" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="16746:17304" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="16785:17028" ph="..." />
-            <marker date="1510141181000" expanded="true" signature="17054:17304" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/video_pipline/label_class.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
+        <state relative-caret-position="1422">
           <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1510125608000" expanded="true" signature="584:3446" ph="..." />
-            <marker date="1510125608000" expanded="true" signature="769:3428" ph="..." />
-            <marker date="1510125608000" expanded="true" signature="3475:5426" ph="..." />
-            <marker date="1510125608000" expanded="true" signature="4264:5426" ph="..." />
-            <marker date="1510125608000" expanded="true" signature="4324:4377" ph="..." />
-            <marker date="1510125608000" expanded="true" signature="4417:4473" ph="..." />
-            <marker date="1510125608000" expanded="true" signature="4587:5399" ph="..." />
-            <marker date="1510125608000" expanded="true" signature="5484:5967" ph="..." />
-            <marker date="1510125608000" expanded="true" signature="5516:5855" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1247,27 +1188,15 @@
         <state relative-caret-position="72">
           <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           <folding>
-            <marker date="1510230621000" expanded="true" signature="1093:2276" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="2339:3039" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="2348:2765" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1510230621000" expanded="true" signature="2845:3013" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="3067:5806" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4182:5806" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4242:4300" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4421:4477" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="4591:5779" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5668:5779" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5866:6349" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="5898:6237" ph="..." />
-            <marker date="1510230621000" expanded="true" signature="6442:6766" ph="..." />
+            <marker date="1510966445000" expanded="true" signature="5668:5779" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/video_pipline/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="152">
+          <caret line="60" column="37" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
           <folding>
             <element signature="e#17#26#0" expanded="true" />
           </folding>
