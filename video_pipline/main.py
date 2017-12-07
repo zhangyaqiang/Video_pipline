@@ -58,7 +58,7 @@ def pipline(video):
     #
     subprocess.Popen(('mv',
                      video,
-                     '/home/zyq/video_pipline_data/finished_video'),
+                     '/home/zyq/video_pipline_data/zwtx_finished'),
                     stdout=subprocess.PIPE,
                     stderr=subprocess.STDOUT)
 
@@ -66,14 +66,14 @@ def pipline(video):
 
 
 if __name__ == "__main__":
-    src_video_dir = '/home/zyq/video_pipline_data/news2016'
-    shots_root_dir = '/home/zyq/video_pipline_data/shots'
-    video_list = glob.glob(os.path.join(src_video_dir, '201609*.mp4'))
+    src_video_dir = '/home/zyq/video_pipline_data/zwtx2017'
+    shots_root_dir = '/home/zyq/video_pipline_data/zwtx_shots'
+    video_list = glob.glob(os.path.join(src_video_dir, '201701*.mp4'))
 
     # pool = mp.Pool(processes=4)201601
     # pool.map(pipline, video_list)
     #
     for video in video_list:
         pipline(video)
-    # video = '/home/zyq/video_pipline_data/news2015/201510141900.mp4'
+    # video = '/home/zyq/video_pipline_data/zwtx2017/201702150700.mp4'
     # pipline(video)

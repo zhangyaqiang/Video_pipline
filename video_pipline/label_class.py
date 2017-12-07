@@ -76,9 +76,9 @@ class Label(object):
                             end += 1
                     self.sen_boundaries.append(end)
                 if start - start_time > 0:
-                    f.write(str(start-start_time) + ' ' + str(end-start_time) + '' + word)
+                    f.write(str(start-start_time) + ' ' + str(end-start_time) + ' ' + word)
                 else:
-                    f.write(str(0) + ' ' + str(end-start_time) + '' + word)
+                    f.write(str(0) + ' ' + str(end-start_time) + ' ' + word)
             row += 1
         f.close()
 

@@ -100,9 +100,9 @@ class Asr(object):
         self.phonetic_path = '/home/zyq/PycharmProjects/alignment/python-pinyin-master/pypinyin/phonetic.txt'
 
         #百度语音识别接口
-        self.api_key = "BLz0HtdYVBMf4irYknGzKv5H"
-        self.api_secret = "dcff835b01bd027a86465c2963bee860"
-        self.bdr = BaiduRest("test_python", self.api_key, self.api_secret)
+        self.api_key = "diFUTsQRY6RWzmoXxR9zgWz8"
+        self.api_secret = "1fe7d2511f21c6e83faa8b7bb9798fc8"
+        self.bdr = BaiduRest("test", self.api_key, self.api_secret)
 
         #text是百度语音识别的结果
         self.text = None
@@ -237,7 +237,35 @@ class Asr(object):
 
         grid_list = glob.glob(os.path.join(self.textgrid_dir, "alignment/*.TextGrid"))
         if len(grid_list) == 0:
-            return False
+            ps = subprocess.Popen(('/home/zyq/Downloads/montreal-forced-aligner/bin/mfa_align',
+                                   self.alignment_dir,
+                                   self.dic_path,
+                                   '/home/zyq/Downloads/montreal-forced-aligner/bin/mandarin.zip',
+                                   self.textgrid_dir),
+                                  stdout=subprocess.PIPE,
+                                  stderr=subprocess.STDOUT)
+
+            output = ps.stdout.read()
+            print(output)
+            time.sleep(5)
+            line_tr = self.wenben
+            phonetic = open(self.phonetic_path, encoding="utf-8")
+            line_se = self.pinyin
+            line_ph = phonetic.readlines()
+
+            in_tr = 0
+            in_ph = 0
+            in_se = 0
+            pt = 0
+
+            while in_ph < len(line_ph):
+                line_ph[in_ph] = line_ph[in_ph].rstrip()
+                in_ph += 1
+
+            line_se = line_se.rstrip()
+            grid_list = glob.glob(os.path.join(self.textgrid_dir, "alignment/*.TextGrid"))
+            if len(grid_list) == 0:
+                return False
         textgrid_path = grid_list[0]
         textgrid = open(textgrid_path, encoding="utf-8")
         line_text = textgrid.readlines()

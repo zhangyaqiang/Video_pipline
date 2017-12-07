@@ -1,144 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="598e923e-f8c6-43d8-aa6c-d152e2873380" name="Default" comment="把视频切成以句子为单位的数据集">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/bin/mandarin.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/bin/mfa_align" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/bin/mfa_generate_dictionary" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/bin/mfa_train_and_align" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/bin/mfa_train_g2p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_bisect.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_bz2.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_codecs_cn.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_codecs_hk.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_codecs_iso2022.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_codecs_jp.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_codecs_kr.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_codecs_tw.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_ctypes.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_datetime.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_decimal.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_hashlib.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_heapq.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_lzma.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_md5.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_multibytecodec.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_multiprocessing.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_opcode.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_pickle.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_posixsubprocess.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_random.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_sha1.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_sha256.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_sha512.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_socket.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_ssl.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/_struct.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/align" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/array.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/audioop.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/base_library.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/binascii.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/fcntl.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/generate_dictionary" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/grp.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/libcrypto.so.1.0.0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/liblzma.so.5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/libncursesw.so.5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/libpython3.5m.so.1.0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/libreadline.so.6" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/libssl.so.1.0.0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/libtinfo.so.5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/libz.so.1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/math.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/mmap.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/pyexpat.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/readline.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/resource.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/select.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/termios.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/acc-tree-stats" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/add-deltas" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/ali-to-post" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/align-equal-compiled" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/apply-cmvn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/build-tree" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/cluster-phones" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/compile-questions" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/compile-train-graphs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/compile-train-graphs-fsts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/compose-transforms" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/compute-cmvn-stats" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/compute-mfcc-feats" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/convert-ali" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/copy-feats" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/draw-tree" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/extract-segments" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/farcompilestrings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/feat-to-dim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/fstarcsort" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/fstcompile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/fstcopy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/fstdraw" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-acc-stats-ali" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-align-compiled" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-boost-silence" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-est" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-est-fmllr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-init-model" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-init-mono" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-latgen-faster" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-mixup" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/gmm-sum-accs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/lattice-align-words" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/lattice-to-phone-lattice" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libfst.so.7" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libfstfar.so.7" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libfstfarscript.so.7" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libfstscript.so.7" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-base.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-decoder.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-feat.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-fstext.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-gmm.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-hmm.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-lat.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-matrix.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-thread.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-transform.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-tree.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libkaldi-util.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/libngram.so.2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/linear-to-nbest" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/nbest-to-ctm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/ngramcount" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/ngrammake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/ngramprint" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/ngramsymbols" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/phonetisaurus-align" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/phonetisaurus-arpa2wfst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/phonetisaurus-g2pfst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/show-transitions" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/subset-feats" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/sum-tree-stats" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/transform-feats" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/thirdparty/bin/weight-silence-post" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/train_and_align" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/train_g2p" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/unicodedata.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/lib/zlib.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/pretrained_models/english.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/pretrained_models/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/montreal-forced-aligner/pretrained_models/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/phonetic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video_pipline/.ipynb_checkpoints/Untitled-checkpoint.ipynb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video_pipline/Asr.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video_pipline/Untitled.ipynb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video_pipline/label_class.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/video_pipline/tests/findoffset.m" />
+    <list default="true" id="598e923e-f8c6-43d8-aa6c-d152e2873380" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video_pipline/main.py" afterPath="$PROJECT_DIR$/video_pipline/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -661,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510538892476</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="把视频切成以句子为单位的数据集">
+      <created>1511147743511</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1511147743511</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
