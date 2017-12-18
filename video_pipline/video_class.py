@@ -28,7 +28,7 @@ class Video(object):
                               stderr=subprocess.STDOUT)
         output = ps.stdout.read()
 
-    def extract_shots_with_ffprobe(self, threshold=0.3):
+    def extract_shots_with_ffprobe(self, threshold=0.2):
         """
         uses ffprobe to produce a list of shot
         boundaries (in seconds)

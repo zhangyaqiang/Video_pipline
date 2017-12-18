@@ -8,7 +8,13 @@ import os
 import time
 import glob
 import subprocess
+from aip import AipSpeech
+import socket
 
+APP_ID = '10545007'
+API_KEY = 'HeQhAqUweP09rY9ytpKbuboM'
+SECRET_KEY = '000d6809528757f39e901b14063186e4'
+client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
 
 class BaiduRest:
     def __init__(self, cu_id, api_key, api_secert):
@@ -61,6 +67,8 @@ class BaiduRest:
             return 'err'
         return JSON.loads(r_data)['result']
 
+
+
 class Asr(object):
     def __init__(self, wav_path=None):
         if wav_path == None:
@@ -100,8 +108,8 @@ class Asr(object):
         self.phonetic_path = '/home/zyq/PycharmProjects/alignment/python-pinyin-master/pypinyin/phonetic.txt'
 
         #百度语音识别接口
-        self.api_key = "diFUTsQRY6RWzmoXxR9zgWz8"
-        self.api_secret = "1fe7d2511f21c6e83faa8b7bb9798fc8"
+        self.api_key = "HeQhAqUweP09rY9ytpKbuboM"
+        self.api_secret = "000d6809528757f39e901b14063186e4"
         self.bdr = BaiduRest("test", self.api_key, self.api_secret)
 
         #text是百度语音识别的结果
@@ -114,8 +122,40 @@ class Asr(object):
         self.pinyin = None
 
     #获取ASR的结果
+    # def get_text(self):
+    #     bairesult = self.bdr.getText(self.wav_path)
+    #     if bairesult == 'err':
+    #         return False
+    #     bairesult = str(bairesult[0])
+    #     bairesult = bairesult[:-1]
+    #     for ch in bairesult:
+    #         if (ch >= 'a' and ch <='z') or (ch >= 'A' and ch <= 'Z'):
+    #             return False
+    #     self.text = bairesult
+    #     return True
+
+    def get_file_content(self, filePath):
+        with open(filePath, 'rb') as fp:
+            return fp.read()
+
+    def getText(self, wav_path):
+        try:
+            res = client.asr(self.get_file_content(wav_path),
+                         'wav',
+                         16000)
+        except :return 'err'
+        if res['err_no'] != 0:
+            return 'err'
+        else:
+            return res['result']
+
     def get_text(self):
-        bairesult = self.bdr.getText(self.wav_path)
+        try:
+            bairesult = self.getText(self.wav_path)
+        except socket.timeout:
+            try: bairesult = self.getText(self.wav_path)
+            except socket.timeout: return False
+
         if bairesult == 'err':
             return False
         bairesult = str(bairesult[0])

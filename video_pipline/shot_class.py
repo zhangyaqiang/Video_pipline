@@ -9,6 +9,7 @@ from skimage import io,color,transform,img_as_ubyte
 import os
 import glob
 import matlab.engine
+import socket
 from video_pipline.Asr import Asr
 from video_pipline.label_class import Label
 
@@ -90,22 +91,40 @@ class Shot(object):
                 for newbox in boxes:
                     p1 = (int(newbox[0]), int(newbox[1]))
                     p2 = (int(newbox[0] + newbox[2]), int(newbox[1] + newbox[3]))
-                if len(dets) != 1:
-                    return False
-                else:
+                # if len(dets) != 1:
+                #     return False
+                if len(dets) > 1:
                     for i, d in enumerate(dets):
                         x, y, w, h = d.left(), d.top(), d.right() - d.left(), d.bottom() - d.top()
                         box_num = 0
                         box = boxes[0]
                         max_overlap = self.overlap_proportion(x, y, w, h, box[0], box[1], box[2], box[3])
-                        if max_overlap < 0.1:
-                            return False
+                        if max_overlap >= 0.1:
+                            face_in_frames += 1
+                        break
+                    cur_frame += 1
+                    continue
+                elif len(dets) == 0:
+                    cur_frame += 1
+                    continue
+                else:
+                    for i, d in enumerate(dets):
+                        x, y, w, h = d.left(), d.top(), d.right() - d.left(), d.bottom() - d.top()
+                        box_num = 0
+                        box = boxes[0]
+                        # max_overlap = self.overlap_proportion(x, y, w, h, box[0], box[1], box[2], box[3])
+                        # if max_overlap >= 0.1:
+                        face_in_frames += 1
             cur_frame += 1
-
-
-        return True
+        if (float(face_in_frames)/cur_frame and cur_frame < 251) > 0.95:
+            print('success')
+            return True
+        else:
+            print('failed')
+            return False
 
     def delete(self):
+        # pass
         ps = subprocess.Popen(("rm",
                                "-rf",
                                self.shot_dir),
@@ -143,8 +162,13 @@ class Shot(object):
             for k, d in enumerate(dets):
                 shape = self.predictor(frame, d)
                 i = -1
-            if shape is None:  # Detector doesn't detect face, just return as is
-                return
+                break
+            if shape is None or len(dets) > 1:  # Detector doesn't detect face, just return as is
+                # return
+                mouth_crop_image = frame[mouth_centroid[1] - width:mouth_centroid[1] + width,
+                                   mouth_centroid[0] - width:mouth_centroid[0] + width]
+                mouth_frames.append(mouth_crop_image)
+                continue
             mouth_points = []
             for part in shape.parts():
                 i += 1
@@ -184,6 +208,7 @@ class Shot(object):
 
     def asr(self):
         a = Asr(self.wav_path)
+
         if not a.get_text():
             self.delete()
             return False
