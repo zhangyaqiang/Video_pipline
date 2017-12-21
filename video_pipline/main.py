@@ -68,10 +68,10 @@ def pipline(video):
 if __name__ == "__main__":
     src_video_dir = '/home/zyq/video_pipline_data/bjjt_finished'
     shots_root_dir = '/home/zyq/video_pipline_data/bjjt_shots'
-    video_list = glob.glob(os.path.join(src_video_dir, '201612*.mp4'))
+    video_list = glob.glob(os.path.join(src_video_dir, '201605*.mp4'))
 
     for video in video_list:
         pipline(video)
-    # video = '/home/zyq/video_pipline_data/bjjt_finished/20161229.mp4'
+    # video = '/home/zyq/video_pipline_data/bjjt_finished/20160419.mp4'
     # pipline(video)
 

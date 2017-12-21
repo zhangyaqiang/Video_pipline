@@ -45,7 +45,7 @@ def get_frames_mouth(video_path):
             if i < 48:
                 continue
             mouth_points.append((part.x, part.y))
-        width = (right - left) // 2
+        # width = (right - left) // 2
         np_mouth_points = np.array(mouth_points)
         mouth_centroid = np.mean(np_mouth_points[:, -2:], axis=0).astype(int)
 #         mouth_crop_image = frame[mouth_centroid[1] - width:mouth_centroid[1] + width, mouth_centroid[0] - width:mouth_centroid[0] + width]
@@ -57,7 +57,8 @@ def get_frames_mouth(video_path):
 
 if __name__ == '__main__':
     video_dir = '/home/zyq/video_pipline_data/dataset/ST-1/video/train_set'
-    video_list = glob.glob(os.path.join(video_dir, '0003*.avi'))
+    # video_list = glob.glob(os.path.join(video_dir, '0003*.avi'))
+    video_list = ['/home/zyq/video_pipline_data/dataset/dataset_avi/0034754.avi']
     sorted(video_list)
     frames_dir = '/home/zyq/video_pipline_data/dataset/ST-1/video_frames/train_set'
     for video in video_list:
@@ -65,6 +66,7 @@ if __name__ == '__main__':
         _dir = os.path.join(frames_dir, os.path.basename(video).split('.')[0])
         if not os.path.exists(_dir):
             mouth_frames = get_frames_mouth((video))
+            print(len(mouth_frames))
             os.mkdir(_dir)
             num = 0
             for frame in mouth_frames:

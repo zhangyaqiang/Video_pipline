@@ -143,11 +143,12 @@ class Asr(object):
             res = client.asr(self.get_file_content(wav_path),
                          'wav',
                          16000)
+            if res['err_no'] != 0:
+                return 'err'
+            else:
+                return res['result']
         except :return 'err'
-        if res['err_no'] != 0:
-            return 'err'
-        else:
-            return res['result']
+
 
     def get_text(self):
         try:

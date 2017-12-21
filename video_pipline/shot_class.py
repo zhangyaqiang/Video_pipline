@@ -139,7 +139,7 @@ class Shot(object):
         num = 0
         for frame in self.mouth_frames:
             frame = color.rgb2gray(frame)
-            frame = transform.resize(frame, (120, 120))
+            frame = transform.resize(frame, (120, 120), mode='constant')
             frame = img_as_ubyte(frame)
             image_path = os.path.join(self.frames_dir, "frame_" + str(num).zfill(4) + ".png")
             io.imsave(image_path, frame)
